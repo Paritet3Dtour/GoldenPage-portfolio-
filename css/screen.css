@@ -1,0 +1,578 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a,
+.header .nav .search,
+.header .nav .button-go, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+  height: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img, .header .nav .search img, .header .nav .button-go img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, a:hover{text-decoration: none;}
+
+.clearfix:before,
+.clearfix:after{
+  content: " ";
+  display: table;
+}
+.clearfix:after{clear: both;}
+
+.left{float: left;}
+.right{float: right;}
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+
+body {
+  font-size: 62.5%;
+  /* font-size 1em = 10px */
+  height: 100%;
+  font-family: "Arial";
+  background-color: #fff;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.box-padding{
+  padding: 120px 0;
+}
+
+h2.title{
+  color: #222;
+  font: 4em Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+h5.title{
+  color: #222;
+  font: 1.8em Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.descr{
+  color: #777;
+  font: 1.6em "Times New Roman", sans-serif;
+}
+/*  HEADER begin  */
+.header{
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  z-index: 9999;
+}
+
+.header .default{
+  position: fixed;
+  background: #f7f7f7;
+  top: 0;
+  -webkit-box-shadow: 0 2px 2px #444;
+     -moz-box-shadow: 0 2px 2px #444;
+      -ms-box-shadow: 0 2px 2px #444;
+       -o-box-shadow: 0 2px 2px #444;
+          box-shadow: 0 2px 2px #444;
+}
+
+.logo{
+  float: left;
+}
+
+.nav{
+  float: right;
+  padding-top: 5px;
+}
+
+.nav li{
+  float: left;
+  margin-right: 40px;
+}
+
+.nav li:last-child{margin-right: 0;}
+
+.nav  a{
+  text-transform: uppercase;
+  color: #fff;
+  font: 1.4em Arial, sans-serif;;
+}
+
+.header.default .nav a {
+  font-weight: bold;
+  color: #222;
+}
+
+.header.default .nav a:hover{color:#fed136}
+
+.nav  a:hover{
+  color:#fed136;
+  font-size: 1.8em;
+}
+/*  HEADER end  */
+/*  HOME begin  */
+#home{
+  cursor: default;
+  height: 700px;
+  padding-top: 270px;
+  text-align: center;
+  color: #fff;
+  background: #222 url("../img/home_background.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+#home h3{
+  font: 4em Arial, sans-serif;
+  margin-bottom: 54px;
+}
+
+#home h1{
+  text-transform: uppercase;
+  font: 7.5em Arial, sans-serif;
+  margin-bottom: 60px;
+}
+
+.btn{
+  border: 1px solid #fed136;
+  color: #fff;
+  width: 240px;
+  height: 65px;
+  background-color: #fed136;
+  font: 2.4em Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+       -o-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.btn:hover{
+  color: #000;
+  background-color: #cfa71d;
+  border: 1px solid #cfa71d;
+}
+/*  HOME end  */
+/*  SERVICES begin  */
+#services{
+  text-align: center;
+}
+
+.services-menu{
+  margin-top: 80px;
+}
+
+.services-item{
+  float: left;
+  width: 33.33%;
+  line-height: 24px;
+  padding: 90px 0;
+}
+
+.services-item p{
+  font: 1.8em "Times New Roman", sans-serif;
+  color: #777;
+  padding: 0 30px;
+}
+
+.services-icon1{
+  background: url("../img/services-icon1.png") no-repeat center top;
+}
+
+.services-icon2{
+  background: url("../img/services-icon2.png") no-repeat center top;
+}
+
+.services-icon3{
+  background: url("../img/services-icon3.png") no-repeat center top;
+}
+/*  SERVICES end  */
+/*  PORTFOLIO begin  */
+#portfolio{
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.portfolio-menu{
+  margin-top: 70px;
+}
+
+.portfolio-item{
+  width: 31%;
+  margin-right: 3.5%;
+  float: left;
+  margin-bottom: 50px;
+  background: #fff;
+}
+
+.portfolio-item:nth-child(3n){
+  margin-right: 0;
+}
+
+.portfolio-item:nth-last-child(1),
+.portfolio-item:nth-last-child(2),
+.portfolio-item:nth-last-child(3){
+  margin-bottom: 0;
+}
+
+.portfolio-item-footer{
+  padding: 25px 20px;
+}
+
+.portfolio-item-footer h5.title{
+  margin-bottom: 4px;
+}
+
+.portfolio-item-footer span{
+  font: 1.4em Arial, sans-serif;
+  color: #777;
+}
+/*  PORTFOLIO end  */
+/*  ABOUT begin  */
+#about{
+  text-align: center;
+  background-color: #fff;
+}
+
+.about-menu{
+  padding-top: 70px;
+}
+
+.about-text{
+  width: 35%;
+}
+
+.about-text h5{
+  line-height: 24px;
+}
+
+.about-text h5 span{
+  text-transform: uppercase;
+}
+
+.about-text p{
+  font: 1.6em "Times New Roman", sans-serif;
+  color: #777;
+  line-height: 24px;
+}
+
+.about-img{
+  width: 30%;
+}
+
+.about-img img{
+  display: inline-block;
+  width: 176px;
+  height: 176px;
+  border: 7px solid #f1f1f1;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+       -o-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.about-img:after{
+  display: block;
+  margin: 0 auto;
+  height: 93px;
+  width: 3px;
+  background-color: #f1f1f1;
+  content: '';
+}
+
+.about-link{
+  padding-top: 28px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #fed136;
+  font: 1.8em/30px Arial, sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  width: 176px;
+  height: 176px;
+  border: 7px solid #f1f1f1;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+       -o-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.about-link:hover{
+  color: #000;
+  font-size: 2.4em;
+}
+/*  ABOUT end  */
+/*  TEAM begin  */
+#team{
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.team-menu{
+  margin-top:80px;
+}
+
+.team-item{
+  width: 33.33%;
+  padding: 0 10px;
+  float: left;
+}
+
+.team-item img{
+  margin-bottom: 15px;
+  border: 7px solid #fff;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+       -o-border-radius: 50%;
+          border-radius: 50%; 
+}
+
+.team-item h5.title{
+  margin-bottom: 8px;
+}
+
+.cat{
+  font: 14px Arial, sans-serif;
+  color: #777;
+  }
+
+.team-social{
+  margin-top: 10px;
+}
+
+.team-social a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 3px;
+  background: url("../img/social-sprite.png") no-repeat;
+  border: 3px solid #222;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+       -o-border-radius: 50%;
+         border-radius: 50%; 
+  }
+
+.team-social a.ic-tw{
+  background-position: 0 0;
+}
+
+.team-social a.ic-tw:hover{
+  border-color: #00aced;
+  background-color: #00aced;
+  background-position: 0 -40px;
+}
+
+.team-social a.ic-fb{
+  background-position: -40px 0;
+}
+
+.team-social a.ic-fb:hover{
+    border-color: #3b5998;
+    background-color: #3b5998;
+    background-position: -40px -40px;
+  }
+
+.team-social a.ic-pn{
+  background-position: -80px 0;
+}
+
+.team-social a.ic-pn:hover{
+  border-color: #cb2028;
+  background-color: #cb2028;
+  background-position: -80px -40px;
+}
+
+.team-social a.ic-gl{
+  background-position: -120px 0;
+}
+
+.team-social a.ic-gl:hover{
+  border-color: #d95232;
+  background-color: #d95232;
+  background-position: -120px -40px;
+}
+
+.team-info{margin-top: 45px;}
+/*  TEAM end  */
+/*  BRANDS begin  */
+.brands{
+  padding: 60px 0;
+  text-align: center;
+}
+
+.brands a{
+  display: inline-block;
+  margin-right: 40px;
+} 
+
+.brands:last-child{margin: 0;}
+
+.brands a img{vertical-align: middle;}
+/*  BRANDS end  */
+/*  CONTACT begin  */
+#contact{
+  text-align: center;
+  background: #222 url("../img/contact-maps.png") no-repeat right bottom;
+}
+
+#contact h2.title{
+  color: #fff;
+}
+
+.message{
+  padding-top: 80px;
+}
+
+.message .left,
+.message .right{
+  width: 48%;
+}
+
+.message input[type="text"],
+.message textarea{
+  background-color: #fff;
+  font: 14px Arial, sans-serif;
+  color: #222;
+  padding: 15px 20px;
+  width: 100%;
+  box-shadow: none;
+  margin-bottom: 30px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+       -o-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.message input[type="text"]{
+  height: 50px;
+  border: 1px solid #ccc;
+}
+
+.message textarea{
+  border: none;
+  height: 210px;
+  resize: none;
+}
+
+::-webkit-input-placeholder{
+  font: 14px Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #bbb;
+}
+
+::-moz-placeholder{
+  font: 14px Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #bbb;
+}
+/*  CONTACT end  */
+/*  FOOTER begin  */
+.footer{
+  padding: 20px 0 30px 0;
+}
+
+.footer .team-social{
+  margin: 0;
+  margin-left: 365px;
+}
+
+.footer  p{
+  font: 1.4em Arial, sans-serif;
+  color: #555;
+  margin-top: 15px;
+}
+
+.team-social a.black{
+  background-color: #222;
+}
+
+.team-social a.ic-tw.black{
+  background-position: 0 -40px;
+}
+
+.team-social a.ic-fb.black{
+  background-position: -40px -40px;
+}
+
+.team-social a.ic-pn.black{
+  background-position: -80px -40px;
+}
+
+.team-social a.ic-gl.black{
+  background-position: -120px -40px;
+}
+/*  FOOTER end  */
+
